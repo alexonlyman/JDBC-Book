@@ -1,0 +1,13 @@
+
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: testcont
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: bookDb
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
